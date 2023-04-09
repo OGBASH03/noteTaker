@@ -8,3 +8,16 @@ api.get('/', (req, res) => {
         res.json(JSON.parse(data))
     );
 });
+
+//GET ROUTES FOR SPECIFIC NOTES
+api.get('/:id', (req, res) => {
+    const noteId = req.params.id;
+    readFromFile('./db/db.json')
+        .then((data) => JSON.parse(data))
+        .then((json) => {
+            const result = json.filter((note) => note.id === noteId);
+            return result.length > 0
+                ? res.json(result)
+                : res.json('No note associated with the ID');
+        });
+});
