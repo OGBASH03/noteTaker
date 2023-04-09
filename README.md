@@ -25,6 +25,8 @@ Click on the Save icon in the navigation at the top of the page to save the new 
 Click on an existing note in the left-hand column to view it in the right-hand column.
 Click on the Write icon in the navigation at the top of the page to create a new note.
 
+![NOTES-SS](/assets/NOTES-SS.png)
+
 ## Installation
 Clone the repository to your local machine.
 Open the terminal and navigate to the project directory.
